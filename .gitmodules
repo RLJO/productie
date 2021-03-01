@@ -1,0 +1,4 @@
+[submodule "ERPsysRO/l10n-romania"]
+	path = ERPsysRO/l10n-romania
+	url = git@github.com:ERPsysRO/l10n-romania.git
+	branch = 14.0
