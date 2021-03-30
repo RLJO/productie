@@ -1,0 +1,15 @@
+{
+    "name": "Terrabit Facebook Pixel",
+    "category": "Website",
+    "summary": "Track Page views, events with Facebook pixel",
+    "version": "14.0.0.0.1",
+    "author": "Terrabit, Dorin Hongu",
+    "website": "https://www.terrabit.ro",
+    "license": "LGPL-3",
+    "price": 15.00,
+    "currency": "EUR",
+    "depends": ["website_sale"],
+    "data": ["views/assets.xml", "views/res_config_settings_views.xml", "views/website_templates.xml"],
+    "development_status": "Beta",
+    "maintainers": ["dhongu"],
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <template id="facebook_pixel_code" inherit_id="portal.frontend_layout" name="Facebook Pixel Code">
+            <xpath expr="//div[@id='wrapwrap']" position="before">
+                <t t-if="website and website.facebook_pixel_code">
+                    <script id='tracking_facebook_pixelcode'>
+                        !function(f,b,e,v,n,t,s)
+                        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                        n.queue=[];t=b.createElement(e);t.async=!0;
+                        t.src=v;s=b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t,s)}(window, document,'script',
+                        'https://connect.facebook.net/en_US/fbevents.js');
+                        fbq('init', '
+                        <t t-esc="website.facebook_pixel_code" />
+                        ');
+                        fbq('track', 'PageView');
+                    </script>
+                    <noscript>
+                        <img
+                            height="1"
+                            width="1"
+                            style="display:none"
+                            t-att-src="'https://www.facebook.com/tr?id=%s&amp;ev=PageView&amp;noscript=1' % (website.facebook_pixel_code)"
+                        />
+                    </noscript>
+                </t>
+            </xpath>
+        </template>
+        <template id="confirmation" inherit_id="website_sale.confirmation">
+            <xpath expr="//div[@id='wrap']" position="after">
+                <div
+                    class="oe_website_sale_confirmation"
+                    t-attf-data-amount_total="#{order.amount_total}"
+                    t-attf-data-currency="#{order.currency_id.name}"
+                >
+
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
