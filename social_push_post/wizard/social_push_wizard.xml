@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_social_push_wizard_form" model="ir.ui.view">
+            <field name="name">Social Push Wizard</field>
+            <field name="model">social.push.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Social Push Wizard">
+                    <p class="oe_grey">
+                        This action pushes a post to the selected visitors.
+                    </p>
+                    <group name="group_selection">
+                        <field name="post_id"/>
+                    </group>
+                    <footer>
+                        <button name="action_do" string="Generate" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <act_window id="launch_send_push_wizard"
+                    name="Social Push"
+                    binding_model="website.visitor"
+                    res_model="social.push.wizard"
+                    view_mode="form"
+                    target="new"
+        />
+
+    </data>
+</odoo>
