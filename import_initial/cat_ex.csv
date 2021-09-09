@@ -1,0 +1,24 @@
+nume,Categoria_parinte,cont_ven,cont_che,cost_method,cont_valuation,Metoda,Journal
+Add,,381000,381000,fifo,381000,manual_periodic,Inventory Valuation
+All,,381000,381000,fifo,381000,manual_periodic,Inventory Valuation
+Alte mat. consumabile,All,302800,302800,fifo,302800,real_time,Inventory Valuation
+Ambalaje,All,381000,381000,fifo,381000,real_time,Inventory Valuation
+Amenajari provizorii,All,323000,323000,fifo,323000,real_time,Inventory Valuation
+Combustibili,All,302200,302200,fifo,302200,real_time,Inventory Valuation
+Discount comercial iesiri,All,709000,709000,fifo,709000,real_time,Inventory Valuation
+Discount comercial intrari,All,609000,609000,fifo,609000,real_time,Inventory Valuation
+Discount financiar iesiri,All,667000,667000,fifo,667000,real_time,Inventory Valuation
+Discount financiar intrari,All,767000,767000,fifo,767000,real_time,Inventory Valuation
+Marfuri,All,371000,371000,fifo,371000,real_time,Inventory Valuation
+Materiale auxiliare,All,302100,302100,fifo,302100,real_time,Inventory Valuation
+Materiale în pastrare_consig,All,803300,803300,fifo,803300,real_time,Inventory Valuation
+Materiale spre prelucrare,All,803200,803200,fifo,803200,real_time,Inventory Valuation
+Materii prime – comp EVI,All,301000,301000,fifo,301000,real_time,Inventory Valuation
+Materii prime generale ,All,301000,301000,fifo,301000,real_time,Inventory Valuation
+Obiecte de inventar,All,303000,303000,fifo,303000,real_time,Inventory Valuation
+Piese de schimb,All,302400,302400,fifo,302400,real_time,Inventory Valuation
+Produse finite,All,345000,345000,fifo,345000,real_time,Inventory Valuation
+Produse reziduale,All,346000,346000,fifo,346000,real_time,Inventory Valuation
+Saleable,All,371000,371000,fifo,371000,real_time,Inventory Valuation
+Semifabricate,All,341000,341000,fifo,341000,real_time,Inventory Valuation
+Servicii vandute,All,704000,704000,fifo,704000,real_time,Inventory Valuation

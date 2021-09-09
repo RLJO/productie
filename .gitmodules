@@ -2,3 +2,6 @@
 	path = ERPsysRO/l10n-romania
 	url = git@github.com:ERPsysRO/l10n-romania.git
 	branch = 14.0
+[submodule "nexterp"]
+	path = nexterp
+	url = https://github.com/NextERP-Romania/odooapps
