@@ -1,0 +1,297 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* deltatech_payment_on_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-10 06:44+0000\n"
+"PO-Revision-Date: 2020-11-10 06:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: deltatech_payment_on_delivery
+#: code:addons/deltatech_payment_on_delivery/models/payment.py:0
+#, python-format
+msgid "; multiple order found"
+msgstr "; s-au găsit mai multe rezultate"
+
+#. module: deltatech_payment_on_delivery
+#: code:addons/deltatech_payment_on_delivery/models/payment.py:0
+#, python-format
+msgid "; no order found"
+msgstr "; nu a fost găsit nici un rezultat"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__acquirer_reference
+msgid "Acquirer Reference"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__amount
+msgid "Amount"
+msgstr "Valoare"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__carrier_id
+msgid "Carrier"
+msgstr "Curier"
+
+#. module: deltatech_payment_on_delivery
+#: model:payment.acquirer,display_as:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Cash On Delivery"
+msgstr "Ramburs"
+
+#. module: deltatech_payment_on_delivery
+#. openerp-web
+#: code:addons/deltatech_payment_on_delivery/static/src/xml/transaction_lines.xml:0
+#, python-format
+msgid "Clear"
+msgstr "Golește"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.actions.server,name:deltatech_payment_on_delivery.action_invoice_confirm_transaction
+#: model:ir.actions.server,name:deltatech_payment_on_delivery.action_sale_confirm_transaction
+msgid "Confirm payment on delivery"
+msgstr "Confirmă ramburs"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__create_uid
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__create_date
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__date
+msgid "Date"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__date_text
+msgid "Date as Text"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__display_name
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__display_name
+msgid "Display Name"
+msgstr "Nume afișat"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields.selection,name:deltatech_payment_on_delivery.selection__payment_transaction_import__state__done
+msgid "Done"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields.selection,name:deltatech_payment_on_delivery.selection__payment_transaction_import__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields.selection,name:deltatech_payment_on_delivery.selection__payment_transaction_import__state__error
+msgid "Error"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__data_file
+msgid "File"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__name
+msgid "File Name"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model,name:deltatech_payment_on_delivery.model_ir_http
+msgid "HTTP Routing"
+msgstr "Rutare HTTP"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__id
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__id
+msgid "ID"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:ir.ui.view,arch_db:deltatech_payment_on_delivery.view_action_payment_transaction_import_tree
+msgid "Import"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model,name:deltatech_payment_on_delivery.model_payment_transaction_import_file
+msgid "Import file payment transaction"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.actions.act_window,name:deltatech_payment_on_delivery.action_payment_transaction_import
+#: model:ir.model,name:deltatech_payment_on_delivery.model_payment_transaction_import
+#: model:ir.ui.menu,name:deltatech_payment_on_delivery.menu_action_payment_transaction_import
+msgid "Import payment transaction"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.actions.act_window,name:deltatech_payment_on_delivery.action_payment_transaction_import_file
+#: model:ir.ui.menu,name:deltatech_payment_on_delivery.menu_action_payment_transaction_import_file
+msgid "Import payment transaction File"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model,name:deltatech_payment_on_delivery.model_account_move
+msgid "Journal Entries"
+msgstr "Note contabile"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import____last_update
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__write_uid
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__write_date
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import_file__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields.selection,name:deltatech_payment_on_delivery.selection__payment_acquirer__provider__on_delivery
+#: model:payment.acquirer,name:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "On Delivery"
+msgstr "La livrare"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model,name:deltatech_payment_on_delivery.model_payment_acquirer
+msgid "Payment Acquirer"
+msgstr "Colector plată"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model,name:deltatech_payment_on_delivery.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "Tranzacție plată"
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:payment.acquirer,pre_msg:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Payment will be refunded upon receipt of the package."
+msgstr "Plata va fi ramburs la primirea coletului."
+
+
+#. module: website_delivery_ups
+#: model_terms:payment.acquirer,auth_msg:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Your payment has been authorized."
+msgstr "Plata dvs. a fost autorizată."
+
+#. module: website_delivery_ups
+#: model_terms:payment.acquirer,cancel_msg:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Your payment has been cancelled."
+msgstr "Plata dvs. a fost anulată."
+
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:payment.acquirer,done_msg:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Your payment has been successfully processed. Thank you!"
+msgstr "Plata dvs. a fost procesată cu succes. Mulțumesc!"
+
+
+#. module: deltatech_payment_on_delivery
+#. openerp-web
+#: code:addons/deltatech_payment_on_delivery/static/src/xml/transaction_lines.xml:0
+#, python-format
+msgid "Process Transaction"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_acquirer__provider
+msgid "Provider"
+msgstr "Furnizor"
+
+#. module: deltatech_payment_on_delivery
+#: model:payment.acquirer,submit_txt:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Ramburs la livrare"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__sale_order_id
+msgid "Sale Order"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model,name:deltatech_payment_on_delivery.model_sale_order
+msgid "Sales Order"
+msgstr "Comandă de vânzare"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__state
+msgid "Status"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_acquirer__submit_txt
+msgid "Submit text"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#. openerp-web
+#: code:addons/deltatech_payment_on_delivery/static/src/js/transaction_validate_button_controller.js:0
+#, python-format
+msgid "Success"
+msgstr "Succes"
+
+#. module: deltatech_payment_on_delivery
+#. openerp-web
+#: code:addons/deltatech_payment_on_delivery/static/src/js/transaction_validate_button_controller.js:0
+#, python-format
+msgid "The transaction has been processed"
+msgstr "Tranzacția a fost procesată"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__carrier_tracking_ref
+msgid "Tracking Reference"
+msgstr "AWB"
+
+#. module: deltatech_payment_on_delivery
+#: model:ir.model.fields,field_description:deltatech_payment_on_delivery.field_payment_transaction_import__transaction_id
+msgid "Transaction"
+msgstr "Tranzație"
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:payment.acquirer,pending_msg:deltatech_payment_on_delivery.payment_acquirer_on_delivery
+msgid "Your payment is in pending state."
+msgstr "Plata dvs. este în așteptare."
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:ir.ui.view,arch_db:deltatech_payment_on_delivery.view_action_payment_transaction_import_form
+msgid "_Apply"
+msgstr "_Aplică"
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:ir.ui.view,arch_db:deltatech_payment_on_delivery.view_action_payment_transaction_import_form
+msgid "_Cancel"
+msgstr ""
+
+#. module: deltatech_payment_on_delivery
+#: model_terms:ir.ui.view,arch_db:deltatech_payment_on_delivery.view_action_payment_transaction_import_form
+msgid "or"
+msgstr "sau"
+
+#. module: deltatech_payment_on_delivery
+#: code:addons/deltatech_payment_on_delivery/models/payment.py:0
+#, python-format
+msgid "received data for reference %s"
+msgstr "date primite pentru referința %s"
