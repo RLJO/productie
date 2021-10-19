@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="payment_acquirer_on_delivery" model="payment.acquirer">
+            <field name="name">On Delivery</field>
+            <field name="display_as">Cash On Delivery</field>
+            <field name="submit_txt">Cash On Delivery</field>
+            <field name="image_128" type="base64" file="deltatech_payment_on_delivery/static/src/img/icon.png" />
+            <field name="provider">on_delivery</field>
+            <field name="company_id" ref="base.main_company" />
+            <field name="view_template_id" ref="on_delivery_form" />
+            <field name="module_id" ref="base.module_deltatech_payment_on_delivery" />
+            <field name="description" type="html">
+                <p>
+                    Cash On Delivery  payment methods
+                </p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-check" />Payment Status Tracking</li>
+                </ul>
+            </field>
+            <field name="pre_msg">Payment will be refunded upon receipt of the package.</field>
+            <field name="pending_msg">Your payment is in pending state.</field>
+        </record>
+    </data>
+</odoo>

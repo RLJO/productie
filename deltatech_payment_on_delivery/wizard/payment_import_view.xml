@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_action_payment_transaction_import_form" model="ir.ui.view">
+        <field name="name">payment.transaction.import.file.form</field>
+        <field name="model">payment.transaction.import.file</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="name" invisible="1" />
+                        <field name="data_file" widget="binary" filename="name" />
+                        <field name="carrier_id" />
+                    </group>
+                </group>
+                <footer>
+                    <button name="do_import" string="_Apply" type="object" class="oe_highlight" />
+                    or
+                    <button string="_Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_payment_transaction_import_file" model="ir.actions.act_window">
+        <field name="name">Import payment transaction File</field>
+        <field name="res_model">payment.transaction.import.file</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+<!--    <menuitem-->
+<!--        name="Import payment transaction File"-->
+<!--        id="menu_action_payment_transaction_import_file"-->
+<!--        action="action_payment_transaction_import_file"-->
+<!--        parent="account.menu_finance_entries_actions"-->
+<!--        groups="account.group_account_manager"-->
+<!--    />-->
+    <record id="view_action_payment_transaction_import_tree" model="ir.ui.view">
+        <field name="name">payment.transaction.import.tree</field>
+        <field name="model">payment.transaction.import</field>
+        <field name="arch" type="xml">
+            <tree
+                string="Import"
+                js_class="transaction_validate_button"
+                decoration-info="(state == 'draft')"
+                decoration-muted="(state == 'done')"
+                decoration-danger="(state == 'error')"
+            >
+                <field name="acquirer_reference" />
+                <field name="carrier_tracking_ref" />
+                <field name="amount" />
+                <field name="date" />
+                <field name="transaction_id" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+    <record id="action_payment_transaction_import" model="ir.actions.act_window">
+        <field name="name">Import payment transaction</field>
+        <field name="res_model">payment.transaction.import</field>
+        <field name="view_mode">tree</field>
+        <field name="target">current</field>
+    </record>
+    <menuitem
+        name="Import payment transaction"
+        id="menu_action_payment_transaction_import"
+        action="action_payment_transaction_import"
+        parent="account.menu_finance_entries_actions"
+        groups="account.group_account_manager"
+    />
+</odoo>

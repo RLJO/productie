@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sale_confirm_transaction" model="ir.actions.server">
+        <field name="name">Confirm payment on delivery</field>
+        <field name="model_id" ref="model_sale_order" />
+        <field name="binding_model_id" ref="model_sale_order" />
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">records.action_confirm_payment_transaction()</field>
+    </record>
+    <record id="action_invoice_confirm_transaction" model="ir.actions.server">
+        <field name="name">Confirm payment on delivery</field>
+        <field name="model_id" ref="model_account_move" />
+        <field name="binding_model_id" ref="model_account_move" />
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">records.action_confirm_payment_transaction()</field>
+    </record>
+</odoo>
