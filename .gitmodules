@@ -1,7 +1,3 @@
-[submodule "l10n-romania"]
-	path = l10n-romania
-	url = git@github.com:OCA/l10n-romania.git
-	branch = 14.0
 [submodule "odooapps"]
 	path = odooapps
 	url = git@github.com:NextERP-Romania/odooapps.git
@@ -10,3 +6,6 @@
 	path = l10n-romania-enterprise
 	url = git@github.com:NextERP-Romania/l10n-romania-enterprise.git
 	branch = 14.0
+[submodule "l10n-romania"]
+	path = l10n-romania
+	url = git@github.com:OCA/l10n-romania.git
