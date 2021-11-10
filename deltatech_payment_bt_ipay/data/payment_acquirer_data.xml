@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="payment_acquirer_bt_ipay" model="payment.acquirer">
+            <field name="name">BT iPay</field>
+            <field name="display_as">Credit Card (powered by BT iPay)</field>
+            <field name="image_128" type="base64" file="deltatech_payment_bt_ipay/static/src/img/bt_ipay_icon.png" />
+            <field name="provider">bt_ipay</field>
+            <field name="company_id" ref="base.main_company" />
+            <field name="view_template_id" ref="bt_ipay_form" />
+            <field name="module_id" ref="base.module_deltatech_payment_bt_ipay" />
+            <field name="description" type="html">
+                <p>
+                    Banca Transilvania iPay Services supports a wide range of payment methods: credit cards, debit
+                    cards.
+                </p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-check" />Online Payment
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-check" />Payment Status Tracking
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-check" />Manual Capture
+                    </li>
+                </ul>
+            </field>
+            <field
+                name="pre_msg"
+            ><![CDATA[
+<p>You will be redirected to the iPay website after clicking on the payment button.</p>]]></field>
+        </record>
+    </data>
+</odoo>

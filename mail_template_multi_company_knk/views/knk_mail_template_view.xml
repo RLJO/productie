@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="knk_email_template_form_inherit" model="ir.ui.view">
+        <field name="name">knk.email.template.form.inherit</field>
+        <field name="model">mail.template</field>
+        <field name="inherit_id" ref="mail.email_template_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='model_id']" position="after">
+                <field name="is_read_only" invisible="1"/>
+                <field name="company_id" />
+            </xpath>
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="attrs">{'readonly': [('is_read_only', '=', True)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

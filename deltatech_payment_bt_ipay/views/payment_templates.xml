@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+        <template id="bt_ipay_form">
+            <div>
+                <input type="hidden" name="data_set" t-att-data-action-url="payment_url" data-remove-me="" />
+                <input type="hidden" name="formUrl" t-att-value="formUrl" />
+                <input type="hidden" name="orderId" t-att-value="orderId" />
+            </div>
+        </template>
+        <template id="payment_confirmation_status" inherit_id="website_sale.payment_confirmation_status">
+            <div class="card-header" position="after">
+                <div t-if="payment_tx_id.state_message" class="card-body">
+                    <span t-esc="payment_tx_id.state_message" />
+                </div>
+            </div>
+        </template>
+        <template id="payment_process_page">
+
+        </template>
+    </data>
+</odoo>
